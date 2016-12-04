@@ -14,7 +14,7 @@ var myPlugin = function () {
             this.handlers();
         },
         handlers: function() {
-            this.fromElement.onfocus = this.showCalendar();
+            this.fromElement.onfocus = this.showCalendar;
             this.fromElement.onblur = this.hideCalendar;
         },
         showCalendar: function (type) {
@@ -32,5 +32,6 @@ var myPlugin = function () {
 
 myPlugin({
     from: 'dateFrom',
-    to: 'dateTo'
+    to: 'dateTo',
+    monthArr: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
 });
