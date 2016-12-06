@@ -40,5 +40,13 @@
 <label for="dateTo">To</label>
 <input type="text" id="dateTo" readonly>
 <script src="dateRange.js"></script>
+<script>
+    dateRange({
+        from: 'dateFrom',
+        to: 'dateTo',
+        monthLabel: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        dayLabel: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
+    });
+</script>
 </body>
 </html>
