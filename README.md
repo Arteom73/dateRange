@@ -20,3 +20,6 @@ width | String | '100%' | calendar width
 monthLabel | Array | ['January', 'February', ...] | array of month names
 dayLabel | Array | ['Mo', 'Tu', ...] | array of weekday names
 
+# Preview
+
+[Demo link](http://coder-free.ru/preview/u/dateRange/index.html)
