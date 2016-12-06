@@ -3,6 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>DateRange</title>
+    <style>
+        #dateRange {
+            box-sizing: border-box;
+            background: #ffffff;
+            border: solid 1px #cccccc;
+        }
+        #dateRange table {
+            width: 100%;
+        }
+        #dateRange [data-event] {
+            cursor: pointer;
+            user-select: none;
+        }
+        #dateRange table:nth-child(1) {
+            text-align: center;
+        }
+        #dateRange table:nth-child(2) td[data-event] {
+            border: solid 1px #eeeeee;
+            text-align: right;
+        }
+        #dateRange table:nth-child(2) td.disabled {
+            background: #eeeeee;
+            text-align: right;
+            cursor: default;
+        }
+        #dateRange table:nth-child(2) td[data-event]:hover {
+            border: solid 1px #cccccc;
+        }
+    </style>
 </head>
 <body>
 <label for="dateFrom">From</label>
